@@ -1,6 +1,6 @@
-# [Project name]
+# AI 免費學習圖書館 PoC V0.1
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+全新獨立的繁體中文初學者學習入口；不修改或複製舊有 YouTube 分類圖書館。完整 app 文件見 `artifacts/ai-learning-library/README.md`。
 
 ## Run & Operate
 
@@ -30,11 +30,11 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+第一版只聚焦 AI 基礎入門 > 生成式 AI 入門 > 初學者，提供五項官方資源、免費條件與來源引用、人工示範摘要及繁體中文 PDF。網站不需會員、資料庫、付款或 B2B；不呼叫共享 API。保留其他原有服務，不做資料庫設定。
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+本次只提供開發預覽，不發布正式網站。摘要不能假稱已讀影片全文；不抓 YouTube 逐字稿、不重製受保護教材。人工示範與真正已取得文本的 AI 摘要必須分開標示。
 
 ## Gotchas
 

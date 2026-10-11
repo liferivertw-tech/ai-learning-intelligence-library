@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI 學習圖書館"
+description = "全新獨立的繁體中文 AI 免費學習圖書館 PoC V0.1，提供五項官方入門資源、透明示範摘要與可下載的中文 PDF 筆記，不需登入。"
+version = "1.0.0"
+id = "artifacts/ai-learning-library"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18560
+
+[services.development]
+run = "pnpm --filter @workspace/ai-learning-library run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-learning-library", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ai-learning-library/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18560"
+BASE_PATH = "/"

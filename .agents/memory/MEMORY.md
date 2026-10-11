@@ -1,0 +1,1 @@
+- [中文 PDF 字型](pdf-font-policy.md) — 策展筆記採靜態 TrueType 建置時子集、執行時完整內嵌，避免 CFF 相容性問題。

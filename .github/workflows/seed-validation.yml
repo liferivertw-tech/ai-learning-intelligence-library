@@ -1,0 +1,26 @@
+name: Life Library seed asset validation
+on:
+  pull_request:
+    paths:
+      - 'assets/**'
+      - 'scripts/validate-seed.mjs'
+      - '.github/workflows/seed-validation.yml'
+  push:
+    branches:
+      - docs/01m-al-life-library-lifeone-integration
+    paths:
+      - 'assets/**'
+      - 'scripts/validate-seed.mjs'
+      - '.github/workflows/seed-validation.yml'
+permissions:
+  contents: read
+jobs:
+  seed-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate preserved knowledge graph assets
+        run: node scripts/validate-seed.mjs

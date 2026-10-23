@@ -48,3 +48,11 @@ A follow-up search located these existing files in the persistent ChatGPT Librar
 The exact ZIP artifacts `02B-1D-knowledge-graph-seed-pack-v1.zip` and `LIFE_RIVER_02B-2B_Architecture_Contracts_V1.0.zip` were not found by the latest exact-name search. Do not claim they were recovered. Homepage V1.0/V1.1 original HTML and a runnable 02B-5G application remain unverified/missing from GitHub.
 
 Next recovery action: verify the raw bytes and checksums of the listed JSON/schema/report assets, then add only those exact existing artifacts to a separate Draft PR with provenance metadata. Do not generate substitute data or replace the missing homepage.
+
+
+## Asset ingest record
+
+- Exact original `knowledge-graph-seed-160.json` was read from the persistent ChatGPT Library in chunks and parsed without changing its JSON values.
+- Validated structural counts: 16 domains, 64 topics, 160 nodes. The source `status` remains `design_seed_not_published`; this commit does not publish resources.
+- Source Library ID: `libfile_7e93155304448191b182b96843b66e65`.
+- Original homepage HTML and logo binary are not included because their original raw bytes were not available for verified transfer in this action.

@@ -1,0 +1,4079 @@
+{
+  "schema_version": "1.0.0",
+  "status": "design_seed_not_published",
+  "taxonomy_version": "02B-1D-v1",
+  "domains": [
+    {
+      "id": "D01",
+      "name_zh_tw": "AI 基礎與素養",
+      "sort_order": 1
+    },
+    {
+      "id": "D02",
+      "name_zh_tw": "數學與程式基礎",
+      "sort_order": 2
+    },
+    {
+      "id": "D03",
+      "name_zh_tw": "資料工程與治理",
+      "sort_order": 3
+    },
+    {
+      "id": "D04",
+      "name_zh_tw": "機器學習",
+      "sort_order": 4
+    },
+    {
+      "id": "D05",
+      "name_zh_tw": "深度學習",
+      "sort_order": 5
+    },
+    {
+      "id": "D06",
+      "name_zh_tw": "自然語言處理",
+      "sort_order": 6
+    },
+    {
+      "id": "D07",
+      "name_zh_tw": "生成式 AI 與 LLM",
+      "sort_order": 7
+    },
+    {
+      "id": "D08",
+      "name_zh_tw": "檢索與知識圖譜",
+      "sort_order": 8
+    },
+    {
+      "id": "D09",
+      "name_zh_tw": "AI Agent 與自動化",
+      "sort_order": 9
+    },
+    {
+      "id": "D10",
+      "name_zh_tw": "電腦視覺",
+      "sort_order": 10
+    },
+    {
+      "id": "D11",
+      "name_zh_tw": "語音與多模態",
+      "sort_order": 11
+    },
+    {
+      "id": "D12",
+      "name_zh_tw": "強化學習與決策",
+      "sort_order": 12
+    },
+    {
+      "id": "D13",
+      "name_zh_tw": "AI 系統與基礎設施",
+      "sort_order": 13
+    },
+    {
+      "id": "D14",
+      "name_zh_tw": "AI 安全與倫理",
+      "sort_order": 14
+    },
+    {
+      "id": "D15",
+      "name_zh_tw": "中國大陸 AI 生態",
+      "sort_order": 15
+    },
+    {
+      "id": "D16",
+      "name_zh_tw": "產業應用與前沿",
+      "sort_order": 16
+    }
+  ],
+  "topics": [
+    {
+      "id": "D01-T01",
+      "domain_id": "D01",
+      "name_zh_tw": "AI 概論",
+      "sort_order": 1
+    },
+    {
+      "id": "D01-T02",
+      "domain_id": "D01",
+      "name_zh_tw": "AI 歷史",
+      "sort_order": 2
+    },
+    {
+      "id": "D01-T03",
+      "domain_id": "D01",
+      "name_zh_tw": "AI 工作流程",
+      "sort_order": 3
+    },
+    {
+      "id": "D01-T04",
+      "domain_id": "D01",
+      "name_zh_tw": "AI 責任使用",
+      "sort_order": 4
+    },
+    {
+      "id": "D02-T01",
+      "domain_id": "D02",
+      "name_zh_tw": "數學基礎",
+      "sort_order": 1
+    },
+    {
+      "id": "D02-T02",
+      "domain_id": "D02",
+      "name_zh_tw": "Python 基礎",
+      "sort_order": 2
+    },
+    {
+      "id": "D02-T03",
+      "domain_id": "D02",
+      "name_zh_tw": "資料運算",
+      "sort_order": 3
+    },
+    {
+      "id": "D02-T04",
+      "domain_id": "D02",
+      "name_zh_tw": "軟體工程基礎",
+      "sort_order": 4
+    },
+    {
+      "id": "D03-T01",
+      "domain_id": "D03",
+      "name_zh_tw": "資料蒐集",
+      "sort_order": 1
+    },
+    {
+      "id": "D03-T02",
+      "domain_id": "D03",
+      "name_zh_tw": "資料品質",
+      "sort_order": 2
+    },
+    {
+      "id": "D03-T03",
+      "domain_id": "D03",
+      "name_zh_tw": "資料平台",
+      "sort_order": 3
+    },
+    {
+      "id": "D03-T04",
+      "domain_id": "D03",
+      "name_zh_tw": "資料治理",
+      "sort_order": 4
+    },
+    {
+      "id": "D04-T01",
+      "domain_id": "D04",
+      "name_zh_tw": "監督式學習",
+      "sort_order": 1
+    },
+    {
+      "id": "D04-T02",
+      "domain_id": "D04",
+      "name_zh_tw": "非監督式學習",
+      "sort_order": 2
+    },
+    {
+      "id": "D04-T03",
+      "domain_id": "D04",
+      "name_zh_tw": "模型訓練",
+      "sort_order": 3
+    },
+    {
+      "id": "D04-T04",
+      "domain_id": "D04",
+      "name_zh_tw": "機器學習部署",
+      "sort_order": 4
+    },
+    {
+      "id": "D05-T01",
+      "domain_id": "D05",
+      "name_zh_tw": "神經網路入門",
+      "sort_order": 1
+    },
+    {
+      "id": "D05-T02",
+      "domain_id": "D05",
+      "name_zh_tw": "深度網路架構",
+      "sort_order": 2
+    },
+    {
+      "id": "D05-T03",
+      "domain_id": "D05",
+      "name_zh_tw": "訓練技巧",
+      "sort_order": 3
+    },
+    {
+      "id": "D05-T04",
+      "domain_id": "D05",
+      "name_zh_tw": "深度學習框架",
+      "sort_order": 4
+    },
+    {
+      "id": "D06-T01",
+      "domain_id": "D06",
+      "name_zh_tw": "文字前處理",
+      "sort_order": 1
+    },
+    {
+      "id": "D06-T02",
+      "domain_id": "D06",
+      "name_zh_tw": "語言模型",
+      "sort_order": 2
+    },
+    {
+      "id": "D06-T03",
+      "domain_id": "D06",
+      "name_zh_tw": "NLP 任務",
+      "sort_order": 3
+    },
+    {
+      "id": "D06-T04",
+      "domain_id": "D06",
+      "name_zh_tw": "多語 NLP",
+      "sort_order": 4
+    },
+    {
+      "id": "D07-T01",
+      "domain_id": "D07",
+      "name_zh_tw": "生成模型概論",
+      "sort_order": 1
+    },
+    {
+      "id": "D07-T02",
+      "domain_id": "D07",
+      "name_zh_tw": "LLM 核心",
+      "sort_order": 2
+    },
+    {
+      "id": "D07-T03",
+      "domain_id": "D07",
+      "name_zh_tw": "Prompt 設計",
+      "sort_order": 3
+    },
+    {
+      "id": "D07-T04",
+      "domain_id": "D07",
+      "name_zh_tw": "模型對齊",
+      "sort_order": 4
+    },
+    {
+      "id": "D08-T01",
+      "domain_id": "D08",
+      "name_zh_tw": "資訊檢索",
+      "sort_order": 1
+    },
+    {
+      "id": "D08-T02",
+      "domain_id": "D08",
+      "name_zh_tw": "RAG 系統",
+      "sort_order": 2
+    },
+    {
+      "id": "D08-T03",
+      "domain_id": "D08",
+      "name_zh_tw": "知識圖譜",
+      "sort_order": 3
+    },
+    {
+      "id": "D08-T04",
+      "domain_id": "D08",
+      "name_zh_tw": "Graph RAG",
+      "sort_order": 4
+    },
+    {
+      "id": "D09-T01",
+      "domain_id": "D09",
+      "name_zh_tw": "Agent 架構",
+      "sort_order": 1
+    },
+    {
+      "id": "D09-T02",
+      "domain_id": "D09",
+      "name_zh_tw": "任務規劃",
+      "sort_order": 2
+    },
+    {
+      "id": "D09-T03",
+      "domain_id": "D09",
+      "name_zh_tw": "Agent 安全",
+      "sort_order": 3
+    },
+    {
+      "id": "D09-T04",
+      "domain_id": "D09",
+      "name_zh_tw": "Agent 評測",
+      "sort_order": 4
+    },
+    {
+      "id": "D10-T01",
+      "domain_id": "D10",
+      "name_zh_tw": "影像基礎",
+      "sort_order": 1
+    },
+    {
+      "id": "D10-T02",
+      "domain_id": "D10",
+      "name_zh_tw": "視覺辨識",
+      "sort_order": 2
+    },
+    {
+      "id": "D10-T03",
+      "domain_id": "D10",
+      "name_zh_tw": "視覺表示",
+      "sort_order": 3
+    },
+    {
+      "id": "D10-T04",
+      "domain_id": "D10",
+      "name_zh_tw": "視覺應用",
+      "sort_order": 4
+    },
+    {
+      "id": "D11-T01",
+      "domain_id": "D11",
+      "name_zh_tw": "語音處理",
+      "sort_order": 1
+    },
+    {
+      "id": "D11-T02",
+      "domain_id": "D11",
+      "name_zh_tw": "多模態理解",
+      "sort_order": 2
+    },
+    {
+      "id": "D11-T03",
+      "domain_id": "D11",
+      "name_zh_tw": "即時互動",
+      "sort_order": 3
+    },
+    {
+      "id": "D11-T04",
+      "domain_id": "D11",
+      "name_zh_tw": "多語溝通",
+      "sort_order": 4
+    },
+    {
+      "id": "D12-T01",
+      "domain_id": "D12",
+      "name_zh_tw": "強化學習基礎",
+      "sort_order": 1
+    },
+    {
+      "id": "D12-T02",
+      "domain_id": "D12",
+      "name_zh_tw": "學習演算法",
+      "sort_order": 2
+    },
+    {
+      "id": "D12-T03",
+      "domain_id": "D12",
+      "name_zh_tw": "決策最佳化",
+      "sort_order": 3
+    },
+    {
+      "id": "D12-T04",
+      "domain_id": "D12",
+      "name_zh_tw": "環境與評測",
+      "sort_order": 4
+    },
+    {
+      "id": "D13-T01",
+      "domain_id": "D13",
+      "name_zh_tw": "模型服務",
+      "sort_order": 1
+    },
+    {
+      "id": "D13-T02",
+      "domain_id": "D13",
+      "name_zh_tw": "運算加速",
+      "sort_order": 2
+    },
+    {
+      "id": "D13-T03",
+      "domain_id": "D13",
+      "name_zh_tw": "MLOps",
+      "sort_order": 3
+    },
+    {
+      "id": "D13-T04",
+      "domain_id": "D13",
+      "name_zh_tw": "可觀測性",
+      "sort_order": 4
+    },
+    {
+      "id": "D14-T01",
+      "domain_id": "D14",
+      "name_zh_tw": "AI 安全",
+      "sort_order": 1
+    },
+    {
+      "id": "D14-T02",
+      "domain_id": "D14",
+      "name_zh_tw": "公平與透明",
+      "sort_order": 2
+    },
+    {
+      "id": "D14-T03",
+      "domain_id": "D14",
+      "name_zh_tw": "法律治理",
+      "sort_order": 3
+    },
+    {
+      "id": "D14-T04",
+      "domain_id": "D14",
+      "name_zh_tw": "可信任 AI",
+      "sort_order": 4
+    },
+    {
+      "id": "D15-T01",
+      "domain_id": "D15",
+      "name_zh_tw": "中國大陸模型",
+      "sort_order": 1
+    },
+    {
+      "id": "D15-T02",
+      "domain_id": "D15",
+      "name_zh_tw": "中國大陸平台",
+      "sort_order": 2
+    },
+    {
+      "id": "D15-T03",
+      "domain_id": "D15",
+      "name_zh_tw": "開源生態",
+      "sort_order": 3
+    },
+    {
+      "id": "D15-T04",
+      "domain_id": "D15",
+      "name_zh_tw": "技術評測",
+      "sort_order": 4
+    },
+    {
+      "id": "D16-T01",
+      "domain_id": "D16",
+      "name_zh_tw": "產業 AI",
+      "sort_order": 1
+    },
+    {
+      "id": "D16-T02",
+      "domain_id": "D16",
+      "name_zh_tw": "具身與機器人",
+      "sort_order": 2
+    },
+    {
+      "id": "D16-T03",
+      "domain_id": "D16",
+      "name_zh_tw": "AI 科學",
+      "sort_order": 3
+    },
+    {
+      "id": "D16-T04",
+      "domain_id": "D16",
+      "name_zh_tw": "新興研究",
+      "sort_order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "D01-T01-N01",
+      "topic_id": "D01-T01",
+      "title_zh_tw": "人工智慧概念",
+      "level": "intro",
+      "prerequisite_ids": [],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T01-N02",
+      "topic_id": "D01-T01",
+      "title_zh_tw": "AI 應用辨識",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T01-N03",
+      "topic_id": "D01-T01",
+      "title_zh_tw": "AI 的限制",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T02-N01",
+      "topic_id": "D01-T02",
+      "title_zh_tw": "符號式人工智慧",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T02-N02",
+      "topic_id": "D01-T02",
+      "title_zh_tw": "統計式 AI",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T02-N03",
+      "topic_id": "D01-T02",
+      "title_zh_tw": "深度學習浪潮",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T03-N01",
+      "topic_id": "D01-T03",
+      "title_zh_tw": "AI 問題定義",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T03-N02",
+      "topic_id": "D01-T03",
+      "title_zh_tw": "AI 專案生命週期",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T04-N01",
+      "topic_id": "D01-T04",
+      "title_zh_tw": "AI 風險概覽",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D01-T04-N02",
+      "topic_id": "D01-T04",
+      "title_zh_tw": "AI 素養判讀",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D01-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "mit-ocw"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T01-N01",
+      "topic_id": "D02-T01",
+      "title_zh_tw": "向量與矩陣",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T01-N02",
+      "topic_id": "D02-T01",
+      "title_zh_tw": "微分與梯度",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T01-N03",
+      "topic_id": "D02-T01",
+      "title_zh_tw": "機率與統計",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T02-N01",
+      "topic_id": "D02-T02",
+      "title_zh_tw": "Python 語法",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T02-N02",
+      "topic_id": "D02-T02",
+      "title_zh_tw": "資料結構",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T02-N03",
+      "topic_id": "D02-T02",
+      "title_zh_tw": "套件環境",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T03-N01",
+      "topic_id": "D02-T03",
+      "title_zh_tw": "NumPy 陣列",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D02-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T03-N02",
+      "topic_id": "D02-T03",
+      "title_zh_tw": "Pandas 資料框",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T04-N01",
+      "topic_id": "D02-T04",
+      "title_zh_tw": "Git 版本控制",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D02-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D02-T04-N02",
+      "topic_id": "D02-T04",
+      "title_zh_tw": "API 與 JSON",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D02-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T01-N01",
+      "topic_id": "D03-T01",
+      "title_zh_tw": "資料來源評估",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T01-N02",
+      "topic_id": "D03-T01",
+      "title_zh_tw": "資料擷取與 ETL",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T01-N03",
+      "topic_id": "D03-T01",
+      "title_zh_tw": "資料標註",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T02-N01",
+      "topic_id": "D03-T02",
+      "title_zh_tw": "缺失值處理",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D03-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T02-N02",
+      "topic_id": "D03-T02",
+      "title_zh_tw": "資料清洗",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T02-N03",
+      "topic_id": "D03-T02",
+      "title_zh_tw": "資料品質指標",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T03-N01",
+      "topic_id": "D03-T03",
+      "title_zh_tw": "資料倉儲",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D03-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T03-N02",
+      "topic_id": "D03-T03",
+      "title_zh_tw": "資料湖與湖倉",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T04-N01",
+      "topic_id": "D03-T04",
+      "title_zh_tw": "資料血緣",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D03-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D03-T04-N02",
+      "topic_id": "D03-T04",
+      "title_zh_tw": "資料隱私管理",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D03-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "scikit"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T01-N01",
+      "topic_id": "D04-T01",
+      "title_zh_tw": "迴歸模型",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T01-N02",
+      "topic_id": "D04-T01",
+      "title_zh_tw": "分類模型",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T01-N03",
+      "topic_id": "D04-T01",
+      "title_zh_tw": "模型評估",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T02-N01",
+      "topic_id": "D04-T02",
+      "title_zh_tw": "分群分析",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D04-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T02-N02",
+      "topic_id": "D04-T02",
+      "title_zh_tw": "降維方法",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T02-N03",
+      "topic_id": "D04-T02",
+      "title_zh_tw": "異常偵測",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T03-N01",
+      "topic_id": "D04-T03",
+      "title_zh_tw": "特徵工程",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D04-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T03-N02",
+      "topic_id": "D04-T03",
+      "title_zh_tw": "交叉驗證",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T04-N01",
+      "topic_id": "D04-T04",
+      "title_zh_tw": "推論服務",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D04-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D04-T04-N02",
+      "topic_id": "D04-T04",
+      "title_zh_tw": "模型監控",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D04-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "google-mlcc"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T01-N01",
+      "topic_id": "D05-T01",
+      "title_zh_tw": "感知器",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T01-N02",
+      "topic_id": "D05-T01",
+      "title_zh_tw": "反向傳播",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T01-N03",
+      "topic_id": "D05-T01",
+      "title_zh_tw": "最佳化演算法",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T02-N01",
+      "topic_id": "D05-T02",
+      "title_zh_tw": "卷積神經網路",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D05-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T02-N02",
+      "topic_id": "D05-T02",
+      "title_zh_tw": "循環神經網路",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T02-N03",
+      "topic_id": "D05-T02",
+      "title_zh_tw": "注意力機制",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T03-N01",
+      "topic_id": "D05-T03",
+      "title_zh_tw": "正則化",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D05-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T03-N02",
+      "topic_id": "D05-T03",
+      "title_zh_tw": "遷移學習",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T04-N01",
+      "topic_id": "D05-T04",
+      "title_zh_tw": "PyTorch 基礎",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D05-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D05-T04-N02",
+      "topic_id": "D05-T04",
+      "title_zh_tw": "TensorFlow 基礎",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D05-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T01-N01",
+      "topic_id": "D06-T01",
+      "title_zh_tw": "斷詞與 Tokenization",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T01-N02",
+      "topic_id": "D06-T01",
+      "title_zh_tw": "文字向量化",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T01-N03",
+      "topic_id": "D06-T01",
+      "title_zh_tw": "語料評估",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T02-N01",
+      "topic_id": "D06-T02",
+      "title_zh_tw": "N-gram 與詞嵌入",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D06-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T02-N02",
+      "topic_id": "D06-T02",
+      "title_zh_tw": "Transformer 編碼器",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T02-N03",
+      "topic_id": "D06-T02",
+      "title_zh_tw": "序列生成",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T03-N01",
+      "topic_id": "D06-T03",
+      "title_zh_tw": "情感分析",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D06-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T03-N02",
+      "topic_id": "D06-T03",
+      "title_zh_tw": "命名實體辨識",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T04-N01",
+      "topic_id": "D06-T04",
+      "title_zh_tw": "跨語言遷移",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D06-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D06-T04-N02",
+      "topic_id": "D06-T04",
+      "title_zh_tw": "中文 NLP 特性",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D06-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T01-N01",
+      "topic_id": "D07-T01",
+      "title_zh_tw": "自回歸生成",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T01-N02",
+      "topic_id": "D07-T01",
+      "title_zh_tw": "擴散模型",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T01-N03",
+      "topic_id": "D07-T01",
+      "title_zh_tw": "生成品質評估",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T02-N01",
+      "topic_id": "D07-T02",
+      "title_zh_tw": "預訓練",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D07-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T02-N02",
+      "topic_id": "D07-T02",
+      "title_zh_tw": "指令微調",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T02-N03",
+      "topic_id": "D07-T02",
+      "title_zh_tw": "上下文視窗",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T03-N01",
+      "topic_id": "D07-T03",
+      "title_zh_tw": "提示詞結構",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D07-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T03-N02",
+      "topic_id": "D07-T03",
+      "title_zh_tw": "結構化輸出",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T04-N01",
+      "topic_id": "D07-T04",
+      "title_zh_tw": "偏好對齊",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D07-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D07-T04-N02",
+      "topic_id": "D07-T04",
+      "title_zh_tw": "幻覺與事實性",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D07-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T01-N01",
+      "topic_id": "D08-T01",
+      "title_zh_tw": "倒排索引",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T01-N02",
+      "topic_id": "D08-T01",
+      "title_zh_tw": "語意搜尋",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T01-N03",
+      "topic_id": "D08-T01",
+      "title_zh_tw": "混合檢索",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T02-N01",
+      "topic_id": "D08-T02",
+      "title_zh_tw": "分塊策略",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D08-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T02-N02",
+      "topic_id": "D08-T02",
+      "title_zh_tw": "Embedding 索引",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T02-N03",
+      "topic_id": "D08-T02",
+      "title_zh_tw": "RAG 評測",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T03-N01",
+      "topic_id": "D08-T03",
+      "title_zh_tw": "實體與關係",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D08-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T03-N02",
+      "topic_id": "D08-T03",
+      "title_zh_tw": "圖查詢語言",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T04-N01",
+      "topic_id": "D08-T04",
+      "title_zh_tw": "圖檢索增強",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D08-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D08-T04-N02",
+      "topic_id": "D08-T04",
+      "title_zh_tw": "來源溯源",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D08-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T01-N01",
+      "topic_id": "D09-T01",
+      "title_zh_tw": "Agent 感知決策",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T01-N02",
+      "topic_id": "D09-T01",
+      "title_zh_tw": "工具調用",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T01-N03",
+      "topic_id": "D09-T01",
+      "title_zh_tw": "記憶管理",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T02-N01",
+      "topic_id": "D09-T02",
+      "title_zh_tw": "任務分解",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D09-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T02-N02",
+      "topic_id": "D09-T02",
+      "title_zh_tw": "工作流編排",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T02-N03",
+      "topic_id": "D09-T02",
+      "title_zh_tw": "多 Agent 協作",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T03-N01",
+      "topic_id": "D09-T03",
+      "title_zh_tw": "工具權限控管",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D09-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T03-N02",
+      "topic_id": "D09-T03",
+      "title_zh_tw": "人類批准閘門",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T04-N01",
+      "topic_id": "D09-T04",
+      "title_zh_tw": "軌跡評測",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D09-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D09-T04-N02",
+      "topic_id": "D09-T04",
+      "title_zh_tw": "失敗復原",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D09-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T01-N01",
+      "topic_id": "D10-T01",
+      "title_zh_tw": "像素與影像處理",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T01-N02",
+      "topic_id": "D10-T01",
+      "title_zh_tw": "影像增強",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T01-N03",
+      "topic_id": "D10-T01",
+      "title_zh_tw": "資料擴增",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T02-N01",
+      "topic_id": "D10-T02",
+      "title_zh_tw": "影像分類",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D10-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T02-N02",
+      "topic_id": "D10-T02",
+      "title_zh_tw": "物件偵測",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T02-N03",
+      "topic_id": "D10-T02",
+      "title_zh_tw": "語意分割",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T03-N01",
+      "topic_id": "D10-T03",
+      "title_zh_tw": "視覺 Transformer",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D10-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T03-N02",
+      "topic_id": "D10-T03",
+      "title_zh_tw": "影像 Embedding",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T04-N01",
+      "topic_id": "D10-T04",
+      "title_zh_tw": "OCR 文件辨識",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D10-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D10-T04-N02",
+      "topic_id": "D10-T04",
+      "title_zh_tw": "影片理解",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D10-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "pytorch"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T01-N01",
+      "topic_id": "D11-T01",
+      "title_zh_tw": "語音訊號基礎",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T01-N02",
+      "topic_id": "D11-T01",
+      "title_zh_tw": "自動語音辨識",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T01-N03",
+      "topic_id": "D11-T01",
+      "title_zh_tw": "文字轉語音",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T02-N01",
+      "topic_id": "D11-T02",
+      "title_zh_tw": "圖文對齊",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D11-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T02-N02",
+      "topic_id": "D11-T02",
+      "title_zh_tw": "視覺語言模型",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T02-N03",
+      "topic_id": "D11-T02",
+      "title_zh_tw": "跨模態檢索",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T03-N01",
+      "topic_id": "D11-T03",
+      "title_zh_tw": "串流語音對話",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D11-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T03-N02",
+      "topic_id": "D11-T03",
+      "title_zh_tw": "即時多模態",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T04-N01",
+      "topic_id": "D11-T04",
+      "title_zh_tw": "語音翻譯",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D11-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D11-T04-N02",
+      "topic_id": "D11-T04",
+      "title_zh_tw": "說話人分離",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D11-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "hf-learn"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T01-N01",
+      "topic_id": "D12-T01",
+      "title_zh_tw": "馬可夫決策過程",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T01-N02",
+      "topic_id": "D12-T01",
+      "title_zh_tw": "獎勵設計",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T01-N03",
+      "topic_id": "D12-T01",
+      "title_zh_tw": "價值函數",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T02-N01",
+      "topic_id": "D12-T02",
+      "title_zh_tw": "Q-learning",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D12-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T02-N02",
+      "topic_id": "D12-T02",
+      "title_zh_tw": "Policy Gradient",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T02-N03",
+      "topic_id": "D12-T02",
+      "title_zh_tw": "Actor-Critic",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T03-N01",
+      "topic_id": "D12-T03",
+      "title_zh_tw": "Bandit 問題",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D12-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T03-N02",
+      "topic_id": "D12-T03",
+      "title_zh_tw": "離線強化學習",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T04-N01",
+      "topic_id": "D12-T04",
+      "title_zh_tw": "模擬環境",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D12-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D12-T04-N02",
+      "topic_id": "D12-T04",
+      "title_zh_tw": "安全探索",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D12-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "stanford-cs229"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T01-N01",
+      "topic_id": "D13-T01",
+      "title_zh_tw": "模型序列化",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T01-N02",
+      "topic_id": "D13-T01",
+      "title_zh_tw": "推論 API",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T01-N03",
+      "topic_id": "D13-T01",
+      "title_zh_tw": "批次推論",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T02-N01",
+      "topic_id": "D13-T02",
+      "title_zh_tw": "GPU 運算",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D13-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T02-N02",
+      "topic_id": "D13-T02",
+      "title_zh_tw": "模型量化",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T02-N03",
+      "topic_id": "D13-T02",
+      "title_zh_tw": "分散式訓練",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T03-N01",
+      "topic_id": "D13-T03",
+      "title_zh_tw": "訓練管線",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D13-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T03-N02",
+      "topic_id": "D13-T03",
+      "title_zh_tw": "模型版本管理",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T04-N01",
+      "topic_id": "D13-T04",
+      "title_zh_tw": "延遲與成本監測",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D13-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D13-T04-N02",
+      "topic_id": "D13-T04",
+      "title_zh_tw": "漂移偵測",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D13-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "nvidia"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T01-N01",
+      "topic_id": "D14-T01",
+      "title_zh_tw": "Prompt Injection",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T01-N02",
+      "topic_id": "D14-T01",
+      "title_zh_tw": "資料洩露防護",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T01-N03",
+      "topic_id": "D14-T01",
+      "title_zh_tw": "紅隊測試",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T02-N01",
+      "topic_id": "D14-T02",
+      "title_zh_tw": "偏差檢測",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D14-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T02-N02",
+      "topic_id": "D14-T02",
+      "title_zh_tw": "模型可解釋性",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T02-N03",
+      "topic_id": "D14-T02",
+      "title_zh_tw": "模型卡",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T03-N01",
+      "topic_id": "D14-T03",
+      "title_zh_tw": "著作權與授權",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D14-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T03-N02",
+      "topic_id": "D14-T03",
+      "title_zh_tw": "個資與跨境資料",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T04-N01",
+      "topic_id": "D14-T04",
+      "title_zh_tw": "人類監督",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D14-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D14-T04-N02",
+      "topic_id": "D14-T04",
+      "title_zh_tw": "風險分級",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D14-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "owasp"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T01-N01",
+      "topic_id": "D15-T01",
+      "title_zh_tw": "DeepSeek 模型家族",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "deepseek"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T01-N02",
+      "topic_id": "D15-T01",
+      "title_zh_tw": "Qwen 通義千問",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "qwen"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T01-N03",
+      "topic_id": "D15-T01",
+      "title_zh_tw": "智譜 GLM",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "qwen"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T02-N01",
+      "topic_id": "D15-T02",
+      "title_zh_tw": "百度文心與千帆",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D15-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "baidu"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T02-N02",
+      "topic_id": "D15-T02",
+      "title_zh_tw": "騰訊混元",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "baidu"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T02-N03",
+      "topic_id": "D15-T02",
+      "title_zh_tw": "華為盤古與昇騰",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "paddle"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T03-N01",
+      "topic_id": "D15-T03",
+      "title_zh_tw": "ModelScope 魔搭",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D15-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "modelscope"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T03-N02",
+      "topic_id": "D15-T03",
+      "title_zh_tw": "PaddlePaddle 飛槳",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "modelscope"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T04-N01",
+      "topic_id": "D15-T04",
+      "title_zh_tw": "中文模型基準",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D15-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "qwen"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D15-T04-N02",
+      "topic_id": "D15-T04",
+      "title_zh_tw": "中國大陸模型授權比較",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D15-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "qwen"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [
+        "china-mainland"
+      ],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T01-N01",
+      "topic_id": "D16-T01",
+      "title_zh_tw": "醫療 AI 應用",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D01-T01-N01",
+        "D02-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T01-N02",
+      "topic_id": "D16-T01",
+      "title_zh_tw": "教育 AI 應用",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T01-N03",
+      "topic_id": "D16-T01",
+      "title_zh_tw": "製造業 AI",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T01-N02"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T02-N01",
+      "topic_id": "D16-T02",
+      "title_zh_tw": "機器人感知",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D16-T01-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T02-N02",
+      "topic_id": "D16-T02",
+      "title_zh_tw": "機器人規劃",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T02-N03",
+      "topic_id": "D16-T02",
+      "title_zh_tw": "世界模型",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T02-N02"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T03-N01",
+      "topic_id": "D16-T03",
+      "title_zh_tw": "科學機器學習",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D16-T02-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T03-N02",
+      "topic_id": "D16-T03",
+      "title_zh_tw": "AI 藥物探索",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T04-N01",
+      "topic_id": "D16-T04",
+      "title_zh_tw": "小模型與端側 AI",
+      "level": "intro",
+      "prerequisite_ids": [
+        "D16-T03-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    },
+    {
+      "id": "D16-T04-N02",
+      "topic_id": "D16-T04",
+      "title_zh_tw": "AI 能源效率",
+      "level": "intermediate",
+      "prerequisite_ids": [
+        "D16-T04-N01"
+      ],
+      "suggested_resource_ids": [
+        "arxiv"
+      ],
+      "resource_validation": "pending",
+      "publish_status": "draft",
+      "tags": [],
+      "estimated_minutes": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": "D01-T01-N01",
+      "to": "D01-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N02",
+      "to": "D01-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D01-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T02-N01",
+      "to": "D01-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T02-N02",
+      "to": "D01-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T02-N01",
+      "to": "D01-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T03-N01",
+      "to": "D01-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T03-N01",
+      "to": "D01-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T04-N01",
+      "to": "D01-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D02-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D02-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N02",
+      "to": "D02-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D02-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T02-N01",
+      "to": "D02-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T02-N02",
+      "to": "D02-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T02-N01",
+      "to": "D02-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T03-N01",
+      "to": "D02-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T03-N01",
+      "to": "D02-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T04-N01",
+      "to": "D02-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D03-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T01-N01",
+      "to": "D03-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T01-N02",
+      "to": "D03-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T01-N01",
+      "to": "D03-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T02-N01",
+      "to": "D03-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T02-N02",
+      "to": "D03-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T02-N01",
+      "to": "D03-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T03-N01",
+      "to": "D03-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T03-N01",
+      "to": "D03-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D03-T04-N01",
+      "to": "D03-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D04-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D04-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T01-N01",
+      "to": "D04-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T01-N02",
+      "to": "D04-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T01-N01",
+      "to": "D04-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T02-N01",
+      "to": "D04-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T02-N02",
+      "to": "D04-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T02-N01",
+      "to": "D04-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T03-N01",
+      "to": "D04-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T03-N01",
+      "to": "D04-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D04-T04-N01",
+      "to": "D04-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D05-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D05-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T01-N01",
+      "to": "D05-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T01-N02",
+      "to": "D05-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T01-N01",
+      "to": "D05-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T02-N01",
+      "to": "D05-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T02-N02",
+      "to": "D05-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T02-N01",
+      "to": "D05-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T03-N01",
+      "to": "D05-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T03-N01",
+      "to": "D05-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D05-T04-N01",
+      "to": "D05-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D06-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D06-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T01-N01",
+      "to": "D06-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T01-N02",
+      "to": "D06-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T01-N01",
+      "to": "D06-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T02-N01",
+      "to": "D06-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T02-N02",
+      "to": "D06-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T02-N01",
+      "to": "D06-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T03-N01",
+      "to": "D06-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T03-N01",
+      "to": "D06-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D06-T04-N01",
+      "to": "D06-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D07-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D07-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T01-N01",
+      "to": "D07-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T01-N02",
+      "to": "D07-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T01-N01",
+      "to": "D07-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T02-N01",
+      "to": "D07-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T02-N02",
+      "to": "D07-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T02-N01",
+      "to": "D07-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T03-N01",
+      "to": "D07-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T03-N01",
+      "to": "D07-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D07-T04-N01",
+      "to": "D07-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D08-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D08-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T01-N01",
+      "to": "D08-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T01-N02",
+      "to": "D08-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T01-N01",
+      "to": "D08-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T02-N01",
+      "to": "D08-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T02-N02",
+      "to": "D08-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T02-N01",
+      "to": "D08-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T03-N01",
+      "to": "D08-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T03-N01",
+      "to": "D08-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D08-T04-N01",
+      "to": "D08-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D09-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D09-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T01-N01",
+      "to": "D09-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T01-N02",
+      "to": "D09-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T01-N01",
+      "to": "D09-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T02-N01",
+      "to": "D09-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T02-N02",
+      "to": "D09-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T02-N01",
+      "to": "D09-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T03-N01",
+      "to": "D09-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T03-N01",
+      "to": "D09-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D09-T04-N01",
+      "to": "D09-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D10-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D10-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T01-N01",
+      "to": "D10-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T01-N02",
+      "to": "D10-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T01-N01",
+      "to": "D10-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T02-N01",
+      "to": "D10-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T02-N02",
+      "to": "D10-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T02-N01",
+      "to": "D10-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T03-N01",
+      "to": "D10-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T03-N01",
+      "to": "D10-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D10-T04-N01",
+      "to": "D10-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D11-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D11-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T01-N01",
+      "to": "D11-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T01-N02",
+      "to": "D11-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T01-N01",
+      "to": "D11-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T02-N01",
+      "to": "D11-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T02-N02",
+      "to": "D11-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T02-N01",
+      "to": "D11-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T03-N01",
+      "to": "D11-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T03-N01",
+      "to": "D11-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D11-T04-N01",
+      "to": "D11-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D12-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D12-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T01-N01",
+      "to": "D12-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T01-N02",
+      "to": "D12-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T01-N01",
+      "to": "D12-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T02-N01",
+      "to": "D12-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T02-N02",
+      "to": "D12-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T02-N01",
+      "to": "D12-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T03-N01",
+      "to": "D12-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T03-N01",
+      "to": "D12-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D12-T04-N01",
+      "to": "D12-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D13-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D13-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T01-N01",
+      "to": "D13-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T01-N02",
+      "to": "D13-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T01-N01",
+      "to": "D13-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T02-N01",
+      "to": "D13-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T02-N02",
+      "to": "D13-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T02-N01",
+      "to": "D13-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T03-N01",
+      "to": "D13-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T03-N01",
+      "to": "D13-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D13-T04-N01",
+      "to": "D13-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D14-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T01-N01",
+      "to": "D14-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T01-N02",
+      "to": "D14-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T01-N01",
+      "to": "D14-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T02-N01",
+      "to": "D14-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T02-N02",
+      "to": "D14-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T02-N01",
+      "to": "D14-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T03-N01",
+      "to": "D14-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T03-N01",
+      "to": "D14-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D14-T04-N01",
+      "to": "D14-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D15-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T01-N01",
+      "to": "D15-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T01-N02",
+      "to": "D15-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T01-N01",
+      "to": "D15-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T02-N01",
+      "to": "D15-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T02-N02",
+      "to": "D15-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T02-N01",
+      "to": "D15-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T03-N01",
+      "to": "D15-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T03-N01",
+      "to": "D15-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D15-T04-N01",
+      "to": "D15-T04-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D01-T01-N01",
+      "to": "D16-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D02-T01-N01",
+      "to": "D16-T01-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T01-N01",
+      "to": "D16-T01-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T01-N02",
+      "to": "D16-T01-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T01-N01",
+      "to": "D16-T02-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T02-N01",
+      "to": "D16-T02-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T02-N02",
+      "to": "D16-T02-N03",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T02-N01",
+      "to": "D16-T03-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T03-N01",
+      "to": "D16-T03-N02",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T03-N01",
+      "to": "D16-T04-N01",
+      "type": "prerequisite"
+    },
+    {
+      "from": "D16-T04-N01",
+      "to": "D16-T04-N02",
+      "type": "prerequisite"
+    }
+  ],
+  "resources": [
+    {
+      "id": "google-mlcc",
+      "title": "Google Machine Learning Crash Course",
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "hf-learn",
+      "title": "Hugging Face Learn",
+      "url": "https://huggingface.co/learn",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "fastai",
+      "title": "fast.ai Practical Deep Learning",
+      "url": "https://course.fast.ai/",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "pytorch",
+      "title": "PyTorch Tutorials",
+      "url": "https://pytorch.org/tutorials/",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "scikit",
+      "title": "scikit-learn User Guide",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "stanford-cs229",
+      "title": "Stanford CS229 materials",
+      "url": "https://cs229.stanford.edu/",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "nvidia",
+      "title": "NVIDIA Developer Learning",
+      "url": "https://developer.nvidia.com/learn",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "qwen",
+      "title": "Qwen3 official repository",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "rights_status": "free_access_code_and_weights_separate",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "deepseek",
+      "title": "DeepSeek-V3 official repository",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "rights_status": "free_access_code_and_weights_separate",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "modelscope",
+      "title": "ModelScope official site",
+      "url": "https://modelscope.cn/",
+      "rights_status": "free_access_item_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "paddle",
+      "title": "PaddlePaddle documentation",
+      "url": "https://www.paddlepaddle.org.cn/",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "baidu",
+      "title": "Baidu AI Cloud documentation",
+      "url": "https://cloud.baidu.com/doc/index.html",
+      "rights_status": "free_access_may_be_paid",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "owasp",
+      "title": "OWASP GenAI Security Project",
+      "url": "https://genai.owasp.org/",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "nists",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "rights_status": "free_access_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "mit-ocw",
+      "title": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/",
+      "rights_status": "free_access_item_license_review",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    },
+    {
+      "id": "arxiv",
+      "title": "arXiv",
+      "url": "https://arxiv.org/",
+      "rights_status": "free_access_paper_license_varies",
+      "verified_per_item": false,
+      "content_reuse_allowed": false,
+      "link_only": true,
+      "review_status": "needs_manual_check"
+    }
+  ],
+  "note": "Labels and prerequisites are draft curriculum proposals; external resources not yet vetted per node."
+}

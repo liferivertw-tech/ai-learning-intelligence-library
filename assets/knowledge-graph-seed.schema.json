@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liferiver.example/schemas/knowledge-graph-seed-v1.schema.json",
+  "title": "LIFE RIVER Knowledge Graph Seed V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "taxonomy_version",
+    "domains",
+    "topics",
+    "nodes",
+    "edges",
+    "resources",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "taxonomy_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "design_seed_not_published",
+        "validated",
+        "published"
+      ]
+    },
+    "note": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "$ref": "#/$defs/domain"
+      }
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 64,
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/topic"
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 160,
+      "maxItems": 160,
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/resource"
+      }
+    }
+  },
+  "$defs": {
+    "domain": {
+      "type": "object",
+      "required": [
+        "id",
+        "name_zh_tw",
+        "sort_order"
+      ],
+      "properties": {
+        "id": {
+          "pattern": "^D[0-9]{2}$",
+          "type": "string"
+        },
+        "name_zh_tw": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sort_order": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "id",
+        "domain_id",
+        "name_zh_tw",
+        "sort_order"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^D[0-9]{2}-T[0-9]{2}$"
+        },
+        "domain_id": {
+          "type": "string"
+        },
+        "name_zh_tw": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sort_order": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "topic_id",
+        "title_zh_tw",
+        "level",
+        "prerequisite_ids",
+        "suggested_resource_ids",
+        "resource_validation",
+        "publish_status",
+        "tags",
+        "estimated_minutes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^D[0-9]{2}-T[0-9]{2}-N[0-9]{2}$"
+        },
+        "topic_id": {
+          "type": "string"
+        },
+        "title_zh_tw": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "enum": [
+            "intro",
+            "intermediate",
+            "advanced"
+          ]
+        },
+        "prerequisite_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "suggested_resource_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "resource_validation": {
+          "enum": [
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        },
+        "publish_status": {
+          "enum": [
+            "draft",
+            "reviewed",
+            "published"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "estimated_minutes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "edge": {
+      "type": "object",
+      "required": [
+        "from",
+        "to",
+        "type"
+      ],
+      "properties": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "prerequisite",
+            "related",
+            "part_of"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "resource": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "url",
+        "rights_status",
+        "verified_per_item",
+        "content_reuse_allowed",
+        "link_only",
+        "review_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "rights_status": {
+          "type": "string"
+        },
+        "verified_per_item": {
+          "type": "boolean"
+        },
+        "content_reuse_allowed": {
+          "type": "boolean"
+        },
+        "link_only": {
+          "type": "boolean"
+        },
+        "review_status": {
+          "enum": [
+            "needs_manual_check",
+            "approved",
+            "rejected"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

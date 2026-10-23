@@ -1,0 +1,11 @@
+{
+  "domains": 16,
+  "topics": 64,
+  "nodes": 160,
+  "prerequisite_edges": 170,
+  "resources": 16,
+  "dag_acyclic": true,
+  "resource_license_per_item_verified": 0,
+  "github_g0": "pending_local_workspace_evidence",
+  "result": "SEED_DESIGN_READY_G0_NOT_RELEASED"
+}

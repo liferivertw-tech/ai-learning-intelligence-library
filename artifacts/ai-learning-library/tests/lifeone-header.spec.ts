@@ -72,7 +72,7 @@ test("LifeLibrary and Life River brand assets render with accessible identity", 
   const riverLogo = page.getByTestId("logo-liferiver-image");
   await expect(riverLogo).toHaveAttribute("alt", "Life River 母品牌標誌");
 
-  for (const width of [390, 1440]) {
+  for (const width of [390, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await expect(libraryLogo).toBeVisible();
     await expect(riverLogo).toBeVisible();
@@ -87,6 +87,20 @@ test("LifeLibrary and Life River brand assets render with accessible identity", 
         ),
       )
       .toBe(expectedRiverLogo);
+    const expectedLogoSize = width < 768 ? 64 : width < 1280 ? 80 : 96;
+    await expect
+      .poll(() =>
+        libraryLogo.evaluate((image: HTMLImageElement) => ({
+          width: image.getBoundingClientRect().width,
+          height: image.getBoundingClientRect().height,
+          fit: getComputedStyle(image).objectFit,
+        })),
+      )
+      .toEqual({
+        width: expectedLogoSize,
+        height: expectedLogoSize,
+        fit: "contain",
+      });
     expect(
       await libraryLogo.evaluate((image: HTMLImageElement) => image.naturalWidth),
     ).toBeGreaterThan(0);
@@ -94,6 +108,23 @@ test("LifeLibrary and Life River brand assets render with accessible identity", 
       await riverLogo.evaluate((image: HTMLImageElement) => image.naturalWidth),
     ).toBeGreaterThan(0);
   }
+});
+
+test("Life River logo and tagline form a safe, keyboard-accessible link", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const link = page.getByRole("link", {
+    name: "Life River 官方網站，Life Flows. Intelligence Connects.（在新分頁開啟）",
+  });
+  await expect(link).toHaveAttribute("href", "https://liferiver.com.tw/");
+  await expect(link).toHaveAttribute("target", "_blank");
+  await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  await expect(link).toContainText("Life Flows. Intelligence Connects.");
+
+  await tabToLink(page, link);
+  await expect(link).toBeFocused();
+  expect(await hasVisibleKeyboardFocus(link)).toBe(true);
 });
 
 test("keyboard navigation visibly focuses the logo, sign-in, and registration links", async ({

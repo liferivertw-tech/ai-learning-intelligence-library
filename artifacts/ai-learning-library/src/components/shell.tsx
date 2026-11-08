@@ -12,7 +12,7 @@ export function Shell({ children }: { children: ReactNode }) {
             <img
               src="/images/LifeLibrary.png"
               alt="LifeLibrary 標誌"
-              className="h-14 w-14 shrink-0 object-contain"
+              className="h-16 w-16 shrink-0 object-contain md:h-20 md:w-20 xl:h-24 xl:w-24"
               data-testid="logo-lifelibrary"
             />
             <span className="min-w-0">
@@ -70,18 +70,30 @@ export function Shell({ children }: { children: ReactNode }) {
           </div>
           <div className="mt-8 flex flex-col items-center gap-3 border-t pt-6 sm:flex-row sm:justify-between">
             <p className="text-xs font-medium tracking-wide text-muted-foreground">Life River 母品牌</p>
-            <picture data-testid="logo-liferiver">
-              <source
-                media="(max-width: 640px)"
-                srcSet="/images/LifeRiver-v-final.png"
-              />
-              <img
-                src="/images/LifeRiver-h-final.png"
-                alt="Life River 母品牌標誌"
-                className="h-24 w-24 max-w-full object-contain sm:h-14 sm:w-72 md:w-80"
-                data-testid="logo-liferiver-image"
-              />
-            </picture>
+            <a
+              href="https://liferiver.com.tw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Life River 官方網站，Life Flows. Intelligence Connects.（在新分頁開啟）"
+              className="group inline-flex max-w-full flex-col items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              data-testid="link-liferiver"
+            >
+              <picture data-testid="logo-liferiver">
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/LifeRiver-v-final.png"
+                />
+                <img
+                  src="/images/LifeRiver-h-final.png"
+                  alt="Life River 母品牌標誌"
+                  className="h-24 w-24 max-w-full object-contain sm:h-20 sm:w-60 md:w-72"
+                  data-testid="logo-liferiver-image"
+                />
+              </picture>
+              <span className="text-center text-xs font-medium tracking-wide text-foreground">
+                Life Flows. Intelligence Connects.
+              </span>
+            </a>
           </div>
         </div>
       </footer>

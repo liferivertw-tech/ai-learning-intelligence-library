@@ -1,12 +1,9 @@
-import { type ReactNode } from 'react';
+import { lazy, Suspense, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import NotFound from '@/pages/not-found';
 import Home from '@/pages/home';
-import ResourcePage from '@/pages/resource';
-import About from '@/pages/about';
 import { Shell } from '@/components/shell';
 import {
   Route,
@@ -15,6 +12,10 @@ import {
   Router as WouterRouter,
 } from 'wouter';
 
+const NotFound = lazy(() => import('@/pages/not-found'));
+const ResourcePage = lazy(() => import('@/pages/resource'));
+const About = lazy(() => import('@/pages/about'));
+
 const queryClient = new QueryClient();
 
 function Router() {
@@ -22,12 +23,14 @@ function Router() {
     // Keep a shared shell (sidebar, navbar) outside the boundary so it
     // survives a page crash.
     <RoutedErrorBoundary>
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/resource/:id" component={ResourcePage} />
-        <Route path="/about" component={About} />
-        <Route component={NotFound} />
-      </Switch>
+      <Suspense fallback={<div className="mx-auto max-w-6xl px-4 py-16 text-sm text-muted-foreground" role="status">載入中…</div>}>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/resource/:id" component={ResourcePage} />
+          <Route path="/about" component={About} />
+          <Route component={NotFound} />
+        </Switch>
+      </Suspense>
     </RoutedErrorBoundary>
   );
 }

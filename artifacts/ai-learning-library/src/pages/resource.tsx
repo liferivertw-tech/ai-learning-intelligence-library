@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useParams } from "wouter";
 import { AlertTriangle, ArrowLeft, Download, ExternalLink, Loader2, RotateCcw, ShieldCheck } from "lucide-react";
 import { resources, DISCLAIMER } from "@/data/resources";
-import { downloadNotes } from "@/lib/pdf";
 
 function Block({ title, children, id }: { title: string; children: React.ReactNode; id?: string }) {
   return (
@@ -30,7 +29,13 @@ export default function ResourcePage() {
 
   const run = async () => {
     setPdf("loading");
-    try { await downloadNotes(r); setPdf("done"); } catch { setPdf("error"); }
+    try {
+      const { downloadNotes } = await import("@/lib/pdf");
+      await downloadNotes(r);
+      setPdf("done");
+    } catch {
+      setPdf("error");
+    }
   };
   const srcIndex = (cid: string) => r.sources.findIndex((s) => s.id === cid) + 1;
 

@@ -51,6 +51,51 @@ test("LifeOne links keep their destinations, names, and safe new-tab behavior", 
   ).toBeVisible();
 });
 
+test("LifeLibrary and Life River brand assets render with accessible identity", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page).toHaveTitle(/LifeLibrary · AI 免費學習圖書館/);
+  await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute(
+    "content",
+    "LifeLibrary",
+  );
+  await expect(page.locator('link[rel="icon"]')).toHaveAttribute(
+    "href",
+    "/images/LifeLibrary.png",
+  );
+
+  const libraryLogo = page.getByTestId("logo-lifelibrary");
+  await expect(libraryLogo).toHaveAttribute("src", "/images/LifeLibrary.png");
+  await expect(libraryLogo).toHaveAttribute("alt", "LifeLibrary 標誌");
+
+  const riverLogo = page.getByTestId("logo-liferiver-image");
+  await expect(riverLogo).toHaveAttribute("alt", "Life River 母品牌標誌");
+
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await expect(libraryLogo).toBeVisible();
+    await expect(riverLogo).toBeVisible();
+    const expectedRiverLogo =
+      width <= 640
+        ? "/images/LifeRiver-v-final.png"
+        : "/images/LifeRiver-h-final.png";
+    await expect
+      .poll(() =>
+        riverLogo.evaluate((image: HTMLImageElement) =>
+          new URL(image.currentSrc).pathname,
+        ),
+      )
+      .toBe(expectedRiverLogo);
+    expect(
+      await libraryLogo.evaluate((image: HTMLImageElement) => image.naturalWidth),
+    ).toBeGreaterThan(0);
+    expect(
+      await riverLogo.evaluate((image: HTMLImageElement) => image.naturalWidth),
+    ).toBeGreaterThan(0);
+  }
+});
+
 test("keyboard navigation visibly focuses the logo, sign-in, and registration links", async ({
   page,
 }) => {

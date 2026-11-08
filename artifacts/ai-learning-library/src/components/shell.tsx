@@ -8,8 +8,13 @@ export function Shell({ children }: { children: ReactNode }) {
     <div className="min-h-[100dvh] flex flex-col">
       <header className="sticky top-0 z-40 border-b bg-background/90 backdrop-blur">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-3 md:py-0 md:min-h-16 flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-4">
-          <Link href="/" className="flex items-center gap-3 min-w-0" data-testid="link-home">
-            <span className="seal grid place-items-center w-9 h-9 text-sm font-bold shrink-0">書</span>
+          <Link href="/" aria-label="LifeLibrary 首頁" className="flex items-center gap-3 min-w-0" data-testid="link-home">
+            <img
+              src="/images/LifeLibrary.png"
+              alt="LifeLibrary 標誌"
+              className="h-14 w-14 shrink-0 object-contain"
+              data-testid="logo-lifelibrary"
+            />
             <span className="min-w-0">
               <span className="block font-display font-bold text-[15px] sm:text-lg leading-tight truncate">AI 免費學習圖書館</span>
               <span className="block font-mono text-[10px] tracking-widest text-muted-foreground">PoC V0.1 · 獨立示範</span>
@@ -58,9 +63,26 @@ export function Shell({ children }: { children: ReactNode }) {
       </header>
       <main className="flex-1">{children}</main>
       <footer className="border-t mt-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-xs text-muted-foreground leading-relaxed grid sm:grid-cols-2 gap-4">
-          <p>本站為獨立概念驗證，與 Google、Microsoft、OpenAI、IBM 無任何隸屬或合作關係。課程內容版權屬原提供者。</p>
-          <p className="sm:text-right">本站不需登入、不收集資料。外部官方網站可能要求註冊帳號。</p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
+          <div className="grid gap-4 text-xs leading-relaxed text-muted-foreground sm:grid-cols-2">
+            <p>本站為獨立概念驗證，與 Google、Microsoft、OpenAI、IBM 無任何隸屬或合作關係。課程內容版權屬原提供者。</p>
+            <p className="sm:text-right">本站不需登入、不收集資料。外部官方網站可能要求註冊帳號。</p>
+          </div>
+          <div className="mt-8 flex flex-col items-center gap-3 border-t pt-6 sm:flex-row sm:justify-between">
+            <p className="text-xs font-medium tracking-wide text-muted-foreground">Life River 母品牌</p>
+            <picture data-testid="logo-liferiver">
+              <source
+                media="(max-width: 640px)"
+                srcSet="/images/LifeRiver-v-final.png"
+              />
+              <img
+                src="/images/LifeRiver-h-final.png"
+                alt="Life River 母品牌標誌"
+                className="h-24 w-24 max-w-full object-contain sm:h-14 sm:w-72 md:w-80"
+                data-testid="logo-liferiver-image"
+              />
+            </picture>
+          </div>
         </div>
       </footer>
     </div>

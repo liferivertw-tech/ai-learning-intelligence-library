@@ -1,1 +1,2 @@
 - [中文 PDF 字型](pdf-font-policy.md) — 策展筆記採靜態 TrueType 建置時子集、執行時完整內嵌，避免 CFF 相容性問題。
+- [Life River 核定品牌文案](liferiver-approved-brand-copy.md) — 頁尾企業標語、品牌格言與出處須使用使用者核定的繁體中文內容。

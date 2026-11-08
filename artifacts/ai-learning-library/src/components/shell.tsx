@@ -68,31 +68,43 @@ export function Shell({ children }: { children: ReactNode }) {
             <p>本站為獨立概念驗證，與 Google、Microsoft、OpenAI、IBM 無任何隸屬或合作關係。課程內容版權屬原提供者。</p>
             <p className="sm:text-right">本站不需登入、不收集資料。外部官方網站可能要求註冊帳號。</p>
           </div>
-          <div className="mt-8 flex flex-col items-center gap-3 border-t pt-6 sm:flex-row sm:justify-between">
-            <p className="text-xs font-medium tracking-wide text-muted-foreground">Life River 母品牌</p>
+          <div className="mt-8 flex flex-col items-center gap-3 border-t pt-6">
             <a
               href="https://liferiver.com.tw/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Life River 官方網站，Life Flows. Intelligence Connects.（在新分頁開啟）"
-              className="group inline-flex max-w-full flex-col items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              aria-label="Life River 官方網站：企業標語，供應生命，享受生活，結出健康果子。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）"
+              className="group flex w-full max-w-2xl flex-col items-center gap-3 rounded-sm text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               data-testid="link-liferiver"
             >
-              <picture data-testid="logo-liferiver">
-                <source
-                  media="(max-width: 640px)"
-                  srcSet="/images/LifeRiver-v-final.png"
-                />
+              <span
+                data-testid="liferiver-brand-name"
+                className="text-xs font-medium tracking-wide text-muted-foreground"
+              >
+                Life River 母品牌
+              </span>
+              <div
+                data-testid="logo-liferiver"
+                className="flex max-w-full flex-col items-center gap-2"
+              >
                 <img
                   src="/images/LifeRiver-h-final.png"
                   alt="Life River 母品牌標誌"
-                  className="h-24 w-24 max-w-full object-contain sm:h-20 sm:w-60 md:w-72"
+                  className="h-16 w-64 max-w-full object-contain sm:h-20 sm:w-80 md:h-24 md:w-96"
                   data-testid="logo-liferiver-image"
                 />
-              </picture>
-              <span className="text-center text-xs font-medium tracking-wide text-foreground">
-                Life Flows. Intelligence Connects.
-              </span>
+                <div className="flex max-w-full flex-col items-center gap-1">
+                  <span className="text-center text-sm font-semibold leading-relaxed text-foreground">
+                    供應生命，享受生活，結出健康果子。
+                  </span>
+                  <span className="text-center text-xs leading-relaxed text-muted-foreground">
+                    日日有供應，月月結新果，年年都歡樂。
+                  </span>
+                  <span className="text-center text-xs leading-relaxed text-muted-foreground">
+                    ——《啟示錄》22:1–2
+                  </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>

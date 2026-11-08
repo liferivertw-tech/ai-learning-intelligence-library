@@ -70,14 +70,14 @@ test("LifeLibrary and Life River brand assets render with accessible identity", 
   await expect(libraryLogo).toHaveAttribute("alt", "LifeLibrary 標誌");
 
   const riverLogo = page.getByTestId("logo-liferiver-image");
-  await expect(riverLogo).toHaveAttribute("alt", "Life River 母品牌標誌");
+  await expect(riverLogo).toHaveAttribute("alt", "LIFE RIVER 官方直立式 Logo");
 
   for (const width of [390, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await expect(libraryLogo).toBeVisible();
     await expect(riverLogo).toBeVisible();
     const expectedRiverLogo =
-      "/images/LifeRiver-h-final.png";
+      "/images/life-river-vertical-final.png";
     await expect
       .poll(() =>
         riverLogo.evaluate((image: HTMLImageElement) =>
@@ -85,21 +85,11 @@ test("LifeLibrary and Life River brand assets render with accessible identity", 
         ),
       )
       .toBe(expectedRiverLogo);
-    const expectedRiverLogoSize =
-      width < 640
-        ? { width: 256, height: 64 }
-        : width < 768
-          ? { width: 320, height: 80 }
-          : { width: 384, height: 96 };
-    await expect
-      .poll(() =>
-        riverLogo.evaluate((image: HTMLImageElement) => ({
-          width: image.getBoundingClientRect().width,
-          height: image.getBoundingClientRect().height,
-          fit: getComputedStyle(image).objectFit,
-        })),
-      )
-      .toEqual({ ...expectedRiverLogoSize, fit: "contain" });
+    const riverBox = await riverLogo.boundingBox();
+    expect(riverBox).not.toBeNull();
+    expect(riverBox!.width).toBeGreaterThanOrEqual(80);
+    expect(riverBox!.width).toBeLessThanOrEqual(160);
+    expect(riverBox!.height / riverBox!.width).toBeCloseTo(1279 / 1230, 2);
     const expectedLogoSize = width < 768 ? 64 : width < 1280 ? 80 : 96;
     await expect
       .poll(() =>
@@ -133,7 +123,7 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
   await expect(link).toHaveAttribute("href", "https://liferiver.com.tw/");
   await expect(link).toHaveAttribute("target", "_blank");
   await expect(link).toHaveAttribute("rel", "noopener noreferrer");
-  await expect(link).toContainText("Life River 母品牌");
+  await expect(link).not.toContainText("母品牌");
   await expect(link).toContainText("供應生命，享受生活，結出健康果子。");
   await expect(link).toContainText("日日有供應，月月結新果，年年都歡樂。");
   await expect(link).toContainText("——《啟示錄》22:1–2");
@@ -153,9 +143,6 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
       const logo = footer?.querySelector(
         '[data-testid="logo-liferiver-image"]',
       );
-      const brandName = brandLink?.querySelector(
-        '[data-testid="liferiver-brand-name"]',
-      );
       const copy = [
         "供應生命，享受生活，結出健康果子。",
         "日日有供應，月月結新果，年年都歡樂。",
@@ -169,7 +156,6 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
         !footer ||
         !brandLink ||
         !logo ||
-        !brandName ||
         copy.some((element) => !element)
       ) {
         throw new Error("Expected Life River footer elements are missing");
@@ -187,7 +173,6 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
         footerWidth: footer.getBoundingClientRect().width,
         linkBox,
         logoBox: rect(logo),
-        brandNameBox: rect(brandName),
         copyBoxes: copy.map((element) => rect(element!)),
       };
     });
@@ -199,17 +184,16 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
     expect(layout.footerWidth).toBeLessThanOrEqual(layout.viewportWidth);
     expect(layout.linkBox.left).toBeGreaterThanOrEqual(0);
     expect(layout.linkBox.right).toBeLessThanOrEqual(width);
-    expect(layout.linkBox.right - layout.linkBox.left).toBeLessThanOrEqual(672);
+    expect(layout.linkBox.right - layout.linkBox.left).toBeLessThanOrEqual(760);
     expect(layout.logoBox.left).toBeGreaterThanOrEqual(layout.linkBox.left);
     expect(layout.logoBox.right).toBeLessThanOrEqual(layout.linkBox.right);
-    expect(layout.brandNameBox.left).toBeGreaterThanOrEqual(layout.linkBox.left);
-    expect(layout.brandNameBox.right).toBeLessThanOrEqual(layout.linkBox.right);
-    const groupCenter = (layout.linkBox.left + layout.linkBox.right) / 2;
-    for (const box of [layout.brandNameBox, layout.logoBox, ...layout.copyBoxes]) {
-      expect((box.left + box.right) / 2).toBeCloseTo(groupCenter, 0);
+    for (const box of layout.copyBoxes) {
+      expect(box.left).toBeGreaterThan(layout.logoBox.right);
+      expect(box.left).toBeCloseTo(layout.copyBoxes[0].left, 0);
     }
-    expect(layout.brandNameBox.bottom).toBeLessThanOrEqual(layout.logoBox.top);
-    expect(layout.logoBox.bottom).toBeLessThanOrEqual(layout.copyBoxes[0].top);
+    const logoCenter = (layout.logoBox.top + layout.logoBox.bottom) / 2;
+    const copyCenter = (layout.copyBoxes[0].top + layout.copyBoxes[2].bottom) / 2;
+    expect(copyCenter).toBeCloseTo(logoCenter, 0);
     expect(layout.copyBoxes[0].bottom).toBeLessThanOrEqual(
       layout.copyBoxes[1].top,
     );

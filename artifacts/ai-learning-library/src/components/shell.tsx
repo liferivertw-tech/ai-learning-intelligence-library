@@ -74,37 +74,29 @@ export function Shell({ children }: { children: ReactNode }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Life River 官方網站：企業標語，供應生命，享受生活，結出健康果子。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）"
-              className="group flex w-full max-w-2xl flex-col items-center gap-3 rounded-sm text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              className="group rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 'clamp(16px, 3vw, 32px)', width: '100%', maxWidth: 760, margin: '0 auto', textAlign: 'left' }}
               data-testid="link-liferiver"
             >
-              <span
-                data-testid="liferiver-brand-name"
-                className="text-xs font-medium tracking-wide text-muted-foreground"
-              >
-                Life River 母品牌
-              </span>
-              <div
-                data-testid="logo-liferiver"
-                className="flex max-w-full flex-col items-center gap-2"
-              >
                 <img
-                  src="/images/LifeRiver-h-final.png"
-                  alt="Life River 母品牌標誌"
-                  className="h-16 w-64 max-w-full object-contain sm:h-20 sm:w-80 md:h-24 md:w-96"
+                  src="/images/life-river-vertical-final.png"
+                  alt="LIFE RIVER 官方直立式 Logo"
+                  width="1230"
+                  height="1279"
+                  style={{ display: 'block', width: 'clamp(88px, 16vw, 144px)', maxWidth: 144, height: 'auto', flexShrink: 0, objectFit: 'contain', borderRadius: 6 }}
                   data-testid="logo-liferiver-image"
                 />
-                <div className="flex max-w-full flex-col items-center gap-1">
-                  <span className="text-center text-sm font-semibold leading-relaxed text-foreground">
+                <span style={{ display: 'grid', gap: 8, minWidth: 0, textAlign: 'left', lineHeight: 1.7 }}>
+                  <span className="text-foreground" style={{ fontSize: 'clamp(13px, 1.8vw, 18px)', fontWeight: 600 }}>
                     供應生命，享受生活，結出健康果子。
                   </span>
-                  <span className="text-center text-xs leading-relaxed text-muted-foreground">
+                  <span className="text-muted-foreground" style={{ fontSize: 'clamp(12px, 1.5vw, 15px)' }}>
                     日日有供應，月月結新果，年年都歡樂。
                   </span>
-                  <span className="text-center text-xs leading-relaxed text-muted-foreground">
+                  <span className="text-muted-foreground" style={{ fontSize: 'clamp(11px, 1.3vw, 13px)' }}>
                     ——《啟示錄》22:1–2
                   </span>
-                </div>
-              </div>
+                </span>
             </a>
           </div>
         </div>

@@ -31,6 +31,9 @@ node_modules
 /.sass-cache
 /connect.lock
 /coverage
+/artifacts/ai-learning-library/test-results/
+/artifacts/ai-learning-library/playwright-report/
+/artifacts/ai-learning-library/playwright/.cache/
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log

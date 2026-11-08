@@ -41,6 +41,14 @@ PORT=5173 BASE_PATH=/ pnpm --filter @workspace/ai-learning-library run dev
 
 瀏覽 `http://localhost:5173`。Replit 開發預覽使用既有 `artifacts/ai-learning-library: web` 執行流程，無須手動設定環境變數。首頁、課程詳細頁和說明頁皆不呼叫共享 API。
 
+### 頁首回歸測試
+
+```sh
+pnpm --filter @workspace/ai-learning-library run test:ui
+```
+
+測試會自動啟動開發伺服器，檢查 LifeOne 三個外連、可及名稱與安全新分頁屬性、鍵盤焦點提示，以及 320–1440px 寬度下頁首是否溢位或重疊。Replit 會自動使用預裝 Chromium；其他環境首次執行前可安裝瀏覽器：`pnpm --filter @workspace/ai-learning-library exec playwright install chromium`。
+
 ## 建置與未來部署
 
 ```sh

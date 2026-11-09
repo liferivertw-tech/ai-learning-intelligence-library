@@ -73,7 +73,7 @@ export function Shell({ children }: { children: ReactNode }) {
               href="https://liferiver.com.tw/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Life River 官方網站：企業標語，供應生命，享受生活，結出健康果子。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）"
+              aria-label="Life River 官方網站：企業標語，供應生命，享受生活，結出健康美果。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）"
               className="group rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 'clamp(16px, 3vw, 32px)', width: '100%', maxWidth: 760, margin: '0 auto', textAlign: 'left' }}
               data-testid="link-liferiver"
@@ -88,7 +88,7 @@ export function Shell({ children }: { children: ReactNode }) {
                 />
                 <span style={{ display: 'grid', gap: 8, minWidth: 0, textAlign: 'left', lineHeight: 1.7 }}>
                   <span className="text-foreground" style={{ fontSize: 'clamp(13px, 1.8vw, 18px)', fontWeight: 600 }}>
-                    供應生命，享受生活，結出健康果子。
+                    供應生命，享受生活，結出健康美果。
                   </span>
                   <span className="text-muted-foreground" style={{ fontSize: 'clamp(12px, 1.5vw, 15px)' }}>
                     日日有供應，月月結新果，年年都歡樂。

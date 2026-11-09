@@ -118,20 +118,20 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
 }) => {
   await page.goto("/");
   const link = page.getByRole("link", {
-    name: "Life River 官方網站：企業標語，供應生命，享受生活，結出健康果子。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）",
+    name: "Life River 官方網站：企業標語，供應生命，享受生活，結出健康美果。；品牌格言，日日有供應，月月結新果，年年都歡樂。；出處，《啟示錄》22:1–2（在新分頁開啟）",
   });
   await expect(link).toHaveAttribute("href", "https://liferiver.com.tw/");
   await expect(link).toHaveAttribute("target", "_blank");
   await expect(link).toHaveAttribute("rel", "noopener noreferrer");
   await expect(link).not.toContainText("母品牌");
-  await expect(link).toContainText("供應生命，享受生活，結出健康果子。");
+  await expect(link).toContainText("供應生命，享受生活，結出健康美果。");
   await expect(link).toContainText("日日有供應，月月結新果，年年都歡樂。");
   await expect(link).toContainText("——《啟示錄》22:1–2");
   await expect(link).not.toContainText("Life Flows. Intelligence Connects.");
 
   const footerLogo = page.getByTestId("logo-liferiver-image");
   const enterpriseSlogan = link.getByText(
-    "供應生命，享受生活，結出健康果子。",
+    "供應生命，享受生活，結出健康美果。",
   );
   const brandMotto = link.getByText("日日有供應，月月結新果，年年都歡樂。");
   const source = link.getByText("——《啟示錄》22:1–2");
@@ -144,7 +144,7 @@ test("Life River logo and tagline form a safe, keyboard-accessible link", async 
         '[data-testid="logo-liferiver-image"]',
       );
       const copy = [
-        "供應生命，享受生活，結出健康果子。",
+        "供應生命，享受生活，結出健康美果。",
         "日日有供應，月月結新果，年年都歡樂。",
         "——《啟示錄》22:1–2",
       ].map((text) =>
